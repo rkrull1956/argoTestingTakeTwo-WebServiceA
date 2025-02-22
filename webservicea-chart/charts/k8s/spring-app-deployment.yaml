@@ -7,8 +7,8 @@ spec:
     app: spring-argocd-app
   ports:
     - protocol: "TCP"
-      port: 8080
-      targetPort: 8080
+      port: 9080
+      targetPort: 9080
       nodePort: 30009
   type: NodePort
 ---
@@ -24,7 +24,7 @@ spec:
   template:
     metadata:
       labels:
-        app: argo-teste-app
+        app: argo-test-app
     spec:
       containers:
         - name: spring-argocd-app
