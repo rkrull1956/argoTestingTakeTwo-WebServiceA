@@ -1,10 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: webservices
-  namespace: argocd
-  annotations:
-    notifications.argoproj.io/subscribe.on-deployed.slack: argocd-deployment-channel
+  name: argo-application
+  namespace: webservices
 spec:
   project: default
 
@@ -13,8 +11,8 @@ spec:
     targetRevision: master
     path: k8s
   destination:
-    server: https://kubernetes.default.svc 
-    namespace: weservices
+    server: https://kubernetes.default.svc
+    namespace: spring-argocd-app
 
   syncPolicy:
     syncOptions:
