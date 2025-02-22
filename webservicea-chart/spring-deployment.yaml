@@ -14,7 +14,7 @@ spec:
     path: webservice-chart
   destination:
     server: https://kubernetes.default.svc 
-    namespace: weservices
+    namespace: webservices
 
   syncPolicy:
     syncOptions:

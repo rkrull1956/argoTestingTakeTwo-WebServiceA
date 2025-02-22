@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: argocd-test
+  name: argocd-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: argo-test
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: argocd-test
+    spec:
+      containers:
+      - image: 21701jake/argo-test:latest 
+        name: argocd-api
