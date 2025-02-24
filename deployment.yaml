@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: argocd-test
-  name: argocd-test
+    app: argo-test
+  name: argo-test
 spec:
   replicas: 3
   selector:
@@ -14,8 +14,8 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: argocd-test
+        app: argo-test
     spec:
       containers:
       - image: 21701jake/argo-test:latest 
-        name: argocd-api
+        name: argo-api

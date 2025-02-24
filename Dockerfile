@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine
     
 ENV JAVA_VERSION="21.0.1+12"
 ENV JAVA_VERSION_TRUNC="21.0.1"
