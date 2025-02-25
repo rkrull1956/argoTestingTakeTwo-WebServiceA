@@ -17,5 +17,5 @@ spec:
         app: argo-test
     spec:
       containers:
-      - image: 21701jake/argo-test:latest
+      - image: 21701jake/argo-test:v1.0
         name: argo-api
