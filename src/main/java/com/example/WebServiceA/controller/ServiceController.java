@@ -8,7 +8,7 @@ public class ServiceController {
     @GetMapping("/hello")
     // green page version 1.0
     public String hello() {
-        return "greenpage";
+        return "greenpage.html";
     }
     
 }
