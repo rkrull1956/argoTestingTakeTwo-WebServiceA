@@ -17,5 +17,5 @@ RUN echo $PATH
 RUN ls /opt/jdk/jdk-21.0.1/bin
 
 ARG JAR_FILE=build/libs/WebServiceA-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} app.jar
+COPY build/libs/WebServiceA-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
