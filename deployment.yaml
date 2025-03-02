@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: argo-test
-  name: argo-test
+    app: webservice-a
+  name: webservice-a
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: argo-test
+      app: webservice-a
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: argo-test
+        app: webservice-a
     spec:
       containers:
-      - image: 21701jake/argo-test:v1.0
-        name: argo-api
+      - image: 21701jake/web-service-a:latest
+        name: webservice-a-api
