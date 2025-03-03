@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: web-service-a-svc
+  name: webservice-a
 spec:
   selector:
-    app: web-service-a
+    app: webservice-a
   ports:
     - protocol: TCP
       port: 9080
