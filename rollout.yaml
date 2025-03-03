@@ -9,11 +9,11 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: web-service-a-svc 
+      app: web-service-a 
   template:
     metadata:
       labels:
-        app: web-service-a-svc 
+        app: web-service-a
     spec:
       containers:
       - name: rollouts-demo
