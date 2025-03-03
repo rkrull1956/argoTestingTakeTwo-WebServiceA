@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: web-service-a
-  name: web-service-a
+    app: webservice-a
+  name: webservice-a
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: web-service-a
+      app: webservice-a
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: web-service-a
+        app: webservice-a
     spec:
       containers:
       - image: 21701jake/web-service-a:latest
