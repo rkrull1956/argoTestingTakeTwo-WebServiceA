@@ -4,6 +4,20 @@ metadata:
   name: webservice-a
 spec:
   selector:
+    app: webservice-a-active
+  ports:
+    - protocol: TCP
+      port: 9080
+      targetPort: 9080
+  type: LoadBalancer
+
+---
+piVersion: v1
+kind: Service
+metadata:
+  name: - webservice-a-preview
+spec:
+  selector:
     app: webservice-a
   ports:
     - protocol: TCP
