@@ -5,7 +5,7 @@ metadata:
   name: - webservice-a-preview
 spec:
   selector:
-    app: webservice-a
+    app: webservice-a-preview
   ports:
     - protocol: TCP
       port: 9080

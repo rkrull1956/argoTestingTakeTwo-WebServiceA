@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: webservice-a
+  name: webservice-a-active
 spec:
   selector:
     app: webservice-a-active
