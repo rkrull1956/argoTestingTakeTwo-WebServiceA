@@ -5,7 +5,7 @@ kind: Rollout
 metadata:
   name: rollout-bluegreen-a
 spec:
-  replicas: 2
+  replicas: 3
   revisionHistoryLimit: 2
   selector:
     matchLabels:
@@ -21,6 +21,10 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 9080
+  workloadRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: webservice-a
   strategy:
     blueGreen:
       # activeService specifies the service to update with the new template hash at time of promotion.

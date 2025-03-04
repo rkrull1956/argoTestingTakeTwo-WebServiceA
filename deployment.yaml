@@ -6,7 +6,7 @@ metadata:
     app: webservice-a
   name: webservice-a
 spec:
-  replicas: 3
+  replicas: 0
   selector:
     matchLabels:
       app: webservice-a
