@@ -4,7 +4,7 @@ metadata:
   name: webservice-a-active
 spec:
   selector:
-    app: webservice-a-active
+    app: webservice-a
   ports:
     - protocol: TCP
       port: 9080
