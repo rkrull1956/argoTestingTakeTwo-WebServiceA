@@ -9,18 +9,7 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: webservice-a 
-  template:
-    metadata:
-      labels:
-        app: webservice-a
-    spec:
-      containers:
-      - name: rollouts-demo
-        image: 21701jake/web-service-a:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 9080
+      app: webservice-a
   workloadRef:
     apiVersion: apps/v1
     kind: Deployment

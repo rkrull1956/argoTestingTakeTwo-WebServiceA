@@ -19,3 +19,5 @@ spec:
       containers:
       - image: 21701jake/web-service-a:latest
         name: webservice-a-api
+        ports:
+          - containerPort: 9080
