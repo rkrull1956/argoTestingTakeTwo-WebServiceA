@@ -10,7 +10,7 @@ public class ServiceController {
     @GetMapping("/")
     // green page version 1.0
     public String hello() {
-        return "greenpage";
+        return "bluepage";
     }
     
     
