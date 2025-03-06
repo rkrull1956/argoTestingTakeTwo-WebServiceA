@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: - webservice-a-preview
+  name: webservice-a-preview
 spec:
   selector:
     app: webservice-a
