@@ -21,3 +21,4 @@ spec:
         name: webservice-a-api
         ports:
           - containerPort: 9080
+      imagePullPolicy: Always
